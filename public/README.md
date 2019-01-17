@@ -1,1 +1,0 @@
-# TuQmano.github.io
