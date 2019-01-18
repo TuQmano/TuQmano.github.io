@@ -10,6 +10,7 @@ tags: ["R Markdown"]
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-# R by _@TuQmano_
+# R by **@TuQmano**
+
 
 Un nuevo espacio en la nube. La idea es acá publicar contenido de mi trabajo desarrollado en `R`. 
