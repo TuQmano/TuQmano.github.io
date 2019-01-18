@@ -19,4 +19,37 @@ categories: R
 </ul>
 <p>La comunidad de usuarios de <code>R</code> en Argentina viene creciendo sostenidamente. Experiencias como las de <a href="http://latin-r.com/"><em>LatinR 2018</em></a> y la proliferación de grupos como <a href="https://twitter.com/RLadiesBA"><em>RLadies</em></a> o <a href="https://twitter.com/renbaires">R en Buenos Aires</a> (y otros tantos capítulos en otras ciudades) son una pequeña muestra de eso.</p>
 <p>Precisamente en <em>LatinR 2018</em> pude presentar una parte de mi trabajo - aún un <em>wip</em>. Se trata de <code>geofacet_ARG</code>: una simulación de grillas de <code>ggplot2</code> (<code>facet</code>) como si fueran mapas. El <em>abstract</em>, código y presentación se encuentran en una carpeta del repisotrio de <a href="https://github.com/TuQmano/geofacet_ARG/tree/master/.LatinR"><code>github</code></a>. Abajo un ejemplo de un gráfico de Tucumán (que pienso desarrollar en un próximo post) que muestra el % de votos de los 2 principales espacios políticos, por departamento, a lo largo del tiempo .</p>
-<p><img src="https://raw.githubusercontent.com/TuQmano/geofacet_ARG/master/.LatinR/TUCGeoFacet.png" /></p>
+<pre><code>## Warning: package &#39;tidyverse&#39; was built under R version 3.5.1
+## -- Attaching packages ----------------------------------------------------------------- tidyverse 1.2.1 --
+## v ggplot2 3.0.0     v purrr   0.2.5
+## v tibble  1.4.2     v dplyr   0.7.6
+## v tidyr   0.8.1     v stringr 1.3.1
+## v readr   1.1.1     v forcats 0.3.0
+## Warning: package &#39;ggplot2&#39; was built under R version 3.5.1
+## Warning: package &#39;purrr&#39; was built under R version 3.5.1
+## Warning: package &#39;dplyr&#39; was built under R version 3.5.1
+## -- Conflicts -------------------------------------------------------------------- tidyverse_conflicts() --
+## x tidyr::extract()   masks magrittr::extract()
+## x dplyr::filter()    masks stats::filter()
+## x dplyr::lag()       masks stats::lag()
+## x purrr::set_names() masks magrittr::set_names()
+## -------------------------------------------------------------------------
+## You have loaded plyr after dplyr - this is likely to cause problems.
+## If you need functions from both plyr and dplyr, please load plyr first, then dplyr:
+## library(plyr); library(dplyr)
+## -------------------------------------------------------------------------
+## 
+## Attaching package: &#39;plyr&#39;
+## The following objects are masked from &#39;package:dplyr&#39;:
+## 
+##     arrange, count, desc, failwith, id, mutate, rename, summarise,
+##     summarize
+## The following object is masked from &#39;package:purrr&#39;:
+## 
+##     compact
+## Warning: package &#39;geofacet&#39; was built under R version 3.5.1
+## Note: You provided a user-specified grid. If this is a
+##   generally-useful grid, please consider submitting it to become a
+##   part of the geofacet package. You can do this easily by calling:
+##   grid_submit(__grid_df_name__)</code></pre>
+<p><img src="/post/2018-01-17-Bienvenidos-a-TuQmanoR_files/figure-html/Plot%20TUC-1.png" width="672" /></p>
