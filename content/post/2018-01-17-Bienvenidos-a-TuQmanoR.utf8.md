@@ -26,6 +26,6 @@ La comunidad de usuarios de `R` en Argentina viene creciendo sostenidamente. Exp
 
 Precisamente en *LatinR 2018* pude presentar una parte de mi trabajo - aún un _wip_. Se trata de `geofacet_ARG`: una simulación de grillas de `ggplot2` (`facet`) como si fueran mapas. El _abstract_, código y presentación se encuentran en una carpeta del repisotrio de [`github`](https://github.com/TuQmano/geofacet_ARG/tree/master/.LatinR). Abajo un ejemplo de un gráfico de Tucumán (que pienso desarrollar en un próximo post) que muestra el % de votos de los 2 principales espacios políticos, por departamento, a lo largo del tiempo .
 
-![](https://raw.githubusercontent.com/TuQmano/geofacet_ARG/master/.LatinR/TUCGeoFacet.png){ width=50% }
+![](https://raw.githubusercontent.com/TuQmano/geofacet_ARG/master/.LatinR/TUCGeoFacet.png)
 
 
