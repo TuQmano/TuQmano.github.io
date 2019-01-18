@@ -113,7 +113,7 @@ colnames(tuc.electoral) <- c("depto", "year", "party", "votes") # rename de vari
 tuc.electoral$votes[is.na(tuc.electoral$votes)] <- 0 # recode NA´s = 0
 ```
 
-```{r PLOT TUC, message=FALSE, warning=FALSE, paged.print=FALSE}
+```{r PLOT TUC, echo=TRUE, message=FALSE, warning=FALSE}
 # PLOT 
 
 attach(tuc.electoral)
