@@ -6,9 +6,7 @@ tags: R Markdown
 categories: R
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE)
-```
+
 
 Este nuevo espacio _TuQmano_ en la nube está pensado para compartir parte del aprendizaje y trabajo con datos. La idea principal es publicar análisis y visualizaciones desarrolados en `R`. 
 
