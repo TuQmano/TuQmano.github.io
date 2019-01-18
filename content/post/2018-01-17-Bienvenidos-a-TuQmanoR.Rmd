@@ -10,7 +10,16 @@ tags: ["R Markdown"]
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-# R by **@TuQmano**
+Este nuevo espacio _TuQmano_ en la nube está pensado para compartir parte del aprendizaje y trabajo con datos. La idea principal es publicar análisis y visualizaciones desarrolados en `R`. 
 
+Como primer ejemplo vale este mismo sitio. *TuQmanoR* está crado a partir de la librería `blogdown` que combina diversos lenguages (`md`, `RMd`, `git`y `HUGO` entre otros) para crear sitios estáticos. Todo desde el miismo entorno de `RStudio`. 
 
-Un nuevo espacio en la nube. La idea es acá publicar contenido de mi trabajo desarrollado en `R`. 
+Una de las mayores ventajas de trabajar con `R` (además de la gratuidad) es la gran comunidad de usuarios. Para la creación de este espacio fueron de gran utilidad: 
+
+* Para `blogdwond` el libro (`bookdown`)  de Yihui Xie, Amber Thomas, Alison Presmanes Hill [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/).
+
+* Para trabajar con `git` [Happy Git and GitHub for the useR](https://happygitwithr.com/) de Jenny Bryan.
+
+* Para la configuración del sitio vinculando `HUGO` con `github` [Making a Website Using Blogdown, Hugo, and GitHub pages.](http://amber.rbind.io/blog/2016/12/19/creatingsite/) de Amber Thomas.
+
+* la ayuda de useRs de la comunidad argenta ( [Elio Campitelli](https://twitter.com/d_olivaw), [Fernando Flores](https://twitter.com/ds_floresf) y [Pao Corrales](https://twitter.com/PaobCorrales)).
