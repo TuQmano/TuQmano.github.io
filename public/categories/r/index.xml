@@ -6,10 +6,20 @@
     <description>Recent content in R on TuQmanoR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jan 2018 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="https://TuQmano.github.io/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bienvenidos a TuQmanoR</title>
+      <link>https://TuQmano.github.io/2018/01/27/bienvenidos-a-tuqmanor/</link>
+      <pubDate>Sat, 27 Jan 2018 21:13:14 -0500</pubDate>
+      
+      <guid>https://TuQmano.github.io/2018/01/27/bienvenidos-a-tuqmanor/</guid>
+      <description>R by _@TuQmano_Un nuevo espacio en la nube. La idea es acá publicar contenido de mi trabajo desarrollado en R.
+</description>
+    </item>
     
     <item>
       <title>Hello R Markdown</title>
