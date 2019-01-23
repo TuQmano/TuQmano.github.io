@@ -6,35 +6,35 @@ tags: R Markdown, ggplot, geo
 categories: R, DataViz
 ---
 
-```{r setup, include=FALSE}
+```{r setup, out.width='100%', fig.align='center',include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-En este posteo quiero mostrar brevemente el proyecto `geofacet_AR` presentado en la primera edición de _*LatinR*_, tal como adelante en el [primer post](https://tuqmano.github.io/2018/01/17/bienvenidos-a-tuqmanor/). El mismo es una extensión^2^ (del proyecto de _Ryan Hafen_ y, en otro nivel, de las grillas o `facet` de `ggplot2`). 
+En este posteo quiero mostrar brevemente el proyecto `geofacet_AR`, presentado en la primera edición de _*LatinR*_, tal como adelante en el [primer post](https://tuqmano.github.io/2018/01/17/bienvenidos-a-tuqmanor/). El mismo es una $extensión^2$ (del proyecto de _Ryan Hafen_ y, en otro nivel, de las grillas o `facet` de `ggplot2`). 
 
-Me permito hacer una cita traduciendo el concepto (lo más básico posible) de la [nota introductoria del propio Hafen](https://ryanhafen.com/blog/geofacet/): 
+Me permito hacer una citar/traducir el concepto (lo más básico posible) de la [nota introductoria del propio Hafen](https://ryanhafen.com/blog/geofacet/): 
 
-> "El paquete `geofacet` amplía `ggplot2` de una manera que facilita la creación de visualizaciones geográficamente facetadas en `R`. Para hacer `geofacet` se toman datos que representan diferentes entidades geográficas y se aplica un método de visualización para cada entidad, con el conjunto resultante de visualizaciones establecidas en una cuadrícula que imita la topología geográfica original lo más cerca posible".
+> "El paquete `geofacet` amplía `ggplot2` de una manera que facilita la creación de visualizaciones geográficamente facetadas en `R`. Para hacer `geofacet` se toman datos que representan diferentes entidades geográficas y se aplica un método de visualización para cada entidad. El conjunto resultante de visualizaciones conforma una cuadrícula que imita la topología geográfica original".
 
-A continuación presetnare con un ejemplo sencillo cuales (creo) son las mayores ventajas de `geofacet`. A saber:
+A continuación presetnaré con un ejemplo sencillo cuales (creo) son las mayores ventajas de `geofacet`. A saber:
 
-* se pueden graficar múltiples variables para cad unidad geográfica
+* se pueden graficar múltiples variables para cada unidad geográfica
 
 * se pueden aplicar otros esquemas de codificación visual más allá del color 
 
 * cada unidad geográfica tiene asignada la misma proporción espacial
 
 
----
-### Nùmero Efectivo de Partidos (NEP)
 
-Vamos a usar datos de *NEP* en base a datos del atlas de Calvo & Escolar y [\@andy_tow](http://twitter.com/andy_tow). El indicador computa la proporción de votos que el partido $_i$ obtiene sobre el total de votos emitidos:
+### Número Efectivo de Partidos (NEP)[^1]
+
+Vamos a usar datos de *NEP* en base a el trabajo de [Calvo & Escolar(2005)](http://gvptsites.umd.edu/calvo/calvo-escolar-final-completo-Mayo-30.05.pdf) y el *Atlas Electoral* de [\@andy_tow](http://twitter.com/andy_tow). El indicador computa la proporción de votos que el partido $_i$ obtiene sobre el total de votos emitidos:
 
 $\LARGE N_{2}=\frac{1}{\sum_{i}^{n}p_{i}^2}$
 
-Los oirginales calculados por [\@Crst_C](http://twitter.com/Crst_C/) [^1] están disponibles en [este post](http://observablesyhechos.blogspot.com/2014/08/numero-efectivo-de-partidos-en.html).
+Las fuetes origniales fueron *tucumaneadas* a [\@Crst_C](http://twitter.com/Crst_C/) y están disponibles en [este post](http://observablesyhechos.blogspot.com/2014/08/numero-efectivo-de-partidos-en.html).
 
-[^1]: [_Laakso & Taagepera (1979)_](https://en.wikipedia.org/wiki/Effective_number_of_parties)  
+[^1]: *"es el número hipotético de partidos de igual tamaño que tendrían el mismo efecto total en la fraccionalización del sistema que el número 'real' [actual] de tamaño desigual"* [_Laakso & Taagepera (1979)_](https://en.wikipedia.org/wiki/Effective_number_of_parties)  
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 
@@ -92,19 +92,22 @@ ggplot(nep.prov, aes(year, NEPp)) +
   facet_wrap(~name_es) +
   #facet_geo(~ name_es, grid = argentina_grid2, scales = "free_y") +
   ylab("Número Efectivo de Partidos (NEP)") + 
-  scale_x_continuous(name = "Año", breaks = c(1983, 1994, 2005))+ 
+  scale_x_continuous(name = "Año", 
+                     breaks = c(1983, 1994, 2005), 
+                     labels = c("`83","`94","`05"))+ 
   geom_vline(xintercept = 2001, colour="red")+ labs(caption="FUENTE: @Crst_C - http://observablesyhechos.blogspot.mx" ) +
-  theme_bw()
+  theme_bw() +
+  theme(aspect.ratio = .5)
 
 ```
 
 
-El gráfico anterior funciona bastante bien. Usa la función `facet_wrap` de `ggplot2`para generar una grilla con el calculo de **NEP** para cada una de las provincias. Una serie de tiempo (1983-2011) y una linea roja vertical (`geom_vline`) que marca el año 2001 (la explosión del sistema de partidos o _El Naufracio_ como lo denominaron [algunos](https://www.jstor.org/stable/3455975)). Lo que `geofacet`permite con muy poco esfuerzo es acomodar la grilla simulando la geografía _"como si fuera un mapa", como veremos más adelante. 
+El gráfico anterior funciona bastante bien. Usa la función `facet_wrap` de `ggplot2`para generar una grilla con el calculo de **NEP** para cada una de las provincias. Una serie de tiempo (1983-2011) y una linea roja vertical (`geom_vline`) que marca el año 2001 (la explosión del sistema de partidos o _El Naufragio_ como lo denominaron [algunos](https://www.jstor.org/stable/3455975)). Lo que `geofacet`permite con muy poco esfuerzo es acomodar la grilla simulando la geografía _"como si fuera un mapa", como veremos más adelante. 
 
 ---
 
 
-Una de las propuestas de `geofacet` es potenciar el desarrollo colaborativo de *geografías*. Cuando lo descubrí, de hecho, ya existía una grilla representando la geografía de Argentina (`argentina_grid1`), desarrollada por Elio Campitelli. Como puede leerse en el [`README.md`](https://github.com/TuQmano/geofacet_ARG/blob/master/ARGENTINA/README.md) del repositorio, decidí hacer una segunda versión basandome en el código de Elio; salvo que en este caso se eliminaron las grillas correspondientes a Malvinas y Antartida. 
+Una de las propuestas de `geofacet` es potenciar el desarrollo colaborativo de *geografías*. Cuando lo descubrí, de hecho, ya existía una grilla representando la geografía de Argentina (`argentina_grid1`), desarrollada por [Elio Campitelli](). Como puede leerse en el [`README.md`](https://github.com/TuQmano/geofacet_ARG/blob/master/ARGENTINA/README.md) del repositorio, decidí hacer una segunda versión basándome en el código de Elio; salvo que en este caso se eliminaron las grillas correspondientes a Malvinas y la Antartida. 
 
 El código para crear el objeto que luego servirá como grilla para los gráficos es el siguiente. Un `data.frame` con cuatro variables. `col` y `row` marcan posiciones de filas y columnas en la grilla, `code` asigna un código a cada provincia, y `name` contiene los nombres de esos distritos. 
 
@@ -112,7 +115,7 @@ Finalmente `grid_preview(argentina_grid2)` permite visualizar la grilla - mapa. 
 
 
 
-```{r geogridARG, echo=TRUE, message=FALSE, warning=FALSE}
+```{r geogridARG, fig.height=10, fig.width=6, echo=TRUE, message=FALSE, warning=FALSE}
 
 library(geofacet)
 
@@ -129,28 +132,26 @@ grid_preview(argentina_grid2)
 
 ```
 
+---
+### `geofacet` + NEP
+
+
 Habiendo cargado nuestro _mapa_, solo debemos agregar una capa al _chunk_ de `ggplot2`: 
 
-```{r message=FALSE, warning=FALSE}
-
-#VERSION GRILLA CONVENCIONAL  
-ggplot(nep.prov, aes(year, NEPp)) +
-  geom_line(color = "blue") +
-  facet_wrap(~name_es) +
-  #facet_geo(~ name_es, grid = argentina_grid2, scales = "free_y") +  ESTA LINEA ES LA QEU REEMPLAZAMOS PARA geofacet 
-  ylab("Número Efectivo de Partidos (NEP)") + 
-  scale_x_continuous(name = "Año", breaks = c(1983, 1994, 2005))+ 
-  geom_vline(xintercept = 2001, colour="red")+ labs(caption="FUENTE: @Crst_C - http://observablesyhechos.blogspot.mx" ) +
-  theme_bw()
+```{r fig.height=10, fig.width=6, message=FALSE, warning=FALSE}
 
 #VERSION GEOFACET  
 ggplot(nep.prov, aes(year, NEPp)) +
   geom_line(color = "blue") +
   #facet_wrap(~name_es) + ESTA ES LA LINEA QUE REEMPLAZAMOS DEL GRAIFCO ANTERIOR
-  facet_geo(~ name_es, grid = argentina_grid2, scales = "free_y") +  
+  facet_geo(~ name_es, grid = argentina_grid2, scales = "free_y") +  # ESTA ES LA LINA PARA ORDENAR LA GRILLA COMO SI FUERA UN MAPA
   ylab("Número Efectivo de Partidos (NEP)") + 
-  scale_x_continuous(name = "Año", breaks = c(1983, 1994, 2005))+ 
+  scale_x_continuous(name = "Año", 
+                     breaks = c(1983, 1994, 2005), 
+                     labels = c("`83","`94","`05"))+ 
   geom_vline(xintercept = 2001, colour="red")+ labs(caption="FUENTE: @Crst_C - http://observablesyhechos.blogspot.mx" ) +
   theme_bw()
-
 ```
+
+Esa es la idea básica de qué es y para qué sirve `geofacet`. En un próximo post intentaré con otros ejemplos mostrar un poco más el **detrás de escena** del código. 
+
