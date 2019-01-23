@@ -102,7 +102,7 @@ ggplot(nep.prov, aes(year, NEPp)) +
 ```
 
 
-El gráfico anterior funciona bastante bien. Usa la función `facet_wrap` de `ggplot2`para generar una grilla con el calculo de **NEP** para cada una de las provincias. Una serie de tiempo (1983-2011) y una linea roja vertical (`geom_vline`) que marca el año 2001 (la explosión del sistema de partidos o _El Naufragio_ como lo denominaron [algunos](https://www.jstor.org/stable/3455975)). Lo que `geofacet`permite con muy poco esfuerzo es acomodar la grilla simulando la geografía _"como si fuera un mapa", como veremos más adelante. 
+El gráfico anterior funciona bastante bien. Usa la función `facet_wrap` de `ggplot2` para generar una grilla con el calculo de **NEP** para cada una de las provincias. Una serie de tiempo (1983-2011) y una linea roja vertical (`geom_vline`) que marca el año 2001 (la explosión del sistema de partidos o _El Naufragio_ como lo denominaron [algunos](https://www.jstor.org/stable/3455975)). Lo que `geofacet` permite con muy poco esfuerzo es acomodar la grilla simulando la geografía _"como si fuera un mapa"_, como veremos más adelante. 
 
 ---
 
