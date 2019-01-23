@@ -1,0 +1,61 @@
+---
+title: "GeofaceteAR"
+author: "Juan Pablo Ruiz Nicolini"
+date: '2018-01-21T17:13:14-05:00'
+tags: R Markdown, ggplot, geo
+categories: R, DataViz
+---
+
+
+
+<p>En este posteo quiero mostrar brevemente el proyecto <code>geofacet_AR</code> presentado en la primera edición de <em><em>LatinR</em></em>, tal como adelante en el <a href="https://tuqmano.github.io/2018/01/17/bienvenidos-a-tuqmanor/">primer post</a>. El mismo es una extensión<sup>2</sup> (del proyecto de <em>Ryan Hafen</em> y, en otro nivel, de las grillas o <code>facet</code> de <code>ggplot2</code>).</p>
+<p>Me permito hacer una cita traduciendo el concepto (lo más básico posible) de la <a href="https://ryanhafen.com/blog/geofacet/">nota introductoria del propio Hafen</a>:</p>
+<blockquote>
+<p>“El paquete <code>geofacet</code> amplía <code>ggplot2</code> de una manera que facilita la creación de visualizaciones geográficamente facetadas en <code>R</code>. Para hacer <code>geofacet</code> se toman datos que representan diferentes entidades geográficas y se aplica un método de visualización para cada entidad, con el conjunto resultante de visualizaciones establecidas en una cuadrícula que imita la topología geográfica original lo más cerca posible”.</p>
+</blockquote>
+<p>A continuación presetnare con un ejemplo sencillo cuales (creo) son las mayores ventajas de <code>geofacet</code>. A saber:</p>
+<ul>
+<li><p>se pueden graficar múltiples variables para cad unidad geográfica</p></li>
+<li><p>se pueden aplicar otros esquemas de codificación visual más allá del color</p></li>
+<li><p>cada unidad geográfica tiene asignada la misma proporción espacial</p></li>
+</ul>
+<p>Una de las propuestas de <code>geofacet</code> es potenciar el desarrollo colaborativo de <em>geografías</em>. Cuando lo descubrí, de hecho, ya existía una grilla representando la geografía de Argentina (<code>argentina_grid1</code>), desarrollada por Elio Campitelli. Como puede leerse en el <a href="https://github.com/TuQmano/geofacet_ARG/blob/master/ARGENTINA/README.md"><code>README.md</code></a> del repositorio, decidí hacer una segunda versión basandome en el código de Elio; salvo que en este caso se eliminaron las grillas correspondientes a Malvinas y Antartida.</p>
+<p>El código para crear el objeto que luego servirá como grilla para los gráficos es el siguiente. Un <code>data.frame</code> con cuatro variables. <code>col</code> y <code>row</code> marcan posiciones de filas y columnas en la grilla, <code>code</code> asigna un código a cada provincia, y <code>name</code> contiene los nombres de esos distritos.</p>
+<p>Finalmente <code>grid_preview(argentina_grid2)</code> permite visualizar la grilla - mapa. Así, facilmente podemos identificar que Jujuy (AR-Y) - la primera unidad en las cuatro variables- tiene como coordenadas de filas y columnas <code>(1, 1)</code> y Tierra del Fuego (AR-V) - la última unidad de las variabales de nuestro <code>data.frame</code> tiene como coordenadas <code>(10, 1)</code>, siendo el primer valor para las filas (<code>row</code>) y el segundo para las columnas (<code>col</code>),</p>
+<pre class="r"><code>
+library(geofacet)
+
+# MAPA GRILLA DE PROVINCIAS ARGENTINAS
+argentina_grid2 &lt;-  data.frame(
+  col = c(1, 3, 5, 1, 2, 1, 3, 4, 2, 2, 4, 1, 3, 3, 4, 1, 2, 2, 1, 1, 2, 1, 1, 1),
+  row = c(1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 7, 7, 8, 9, 10),
+  code = c(&quot;AR-Y&quot;, &quot;AR-P&quot;, &quot;AR-N&quot;, &quot;AR-A&quot;, &quot;AR-T&quot;, &quot;AR-K&quot;, &quot;AR-H&quot;, &quot;AR-W&quot;, &quot;AR-G&quot;, &quot;AR-X&quot;, &quot;AR-E&quot;, &quot;AR-F&quot;, &quot;AR-S&quot;, &quot;AR-B&quot;, &quot;AR-C&quot;, &quot;AR-J&quot;, &quot;AR-D&quot;, &quot;AR-L&quot;, &quot;AR-M&quot;, &quot;AR-Q&quot;, &quot;AR-R&quot;, &quot;AR-U&quot;, &quot;AR-Z&quot;, &quot;AR-V&quot;),
+  name_es = c(&quot;Jujuy&quot;, &quot;Formosa&quot;, &quot;Misiones&quot;, &quot;Salta&quot;, &quot;Tucumán&quot;, &quot;Catamarca&quot;, &quot;Chaco&quot;, &quot;Corrientes&quot;, &quot;S.del.Estero&quot;, &quot;Córdoba&quot;, &quot;Entre.Ríos&quot;, &quot;La.Rioja&quot;, &quot;Santa.Fe&quot;, &quot;Buenos.Aires&quot;, &quot;C.A.B.A.&quot;, &quot;San.Juan&quot;, &quot;San.Luis&quot;, &quot;La.Pampa&quot;, &quot;Mendoza&quot;, &quot;Neuquén&quot;, &quot;Río.Negro&quot;, &quot;Chubut&quot;, &quot;Santa.Cruz&quot;, &quot;T.del.Fuego&quot;),
+  stringsAsFactors = FALSE
+)
+
+grid_preview(argentina_grid2)</code></pre>
+<p><img src="/post/Geofacetear_files/figure-html/geogridARG-1.png" width="672" /></p>
+<p>Habiendo cargado nuestro <em>mapa</em>, solo debemos agregar una capa al <em>chunk</em> de <code>ggplot2</code>:</p>
+<pre class="r"><code>
+#VERSION GRILLA CONVENCIONAL  
+ggplot(nep.prov, aes(year, NEPp)) +
+  geom_line(color = &quot;blue&quot;) +
+  facet_wrap(~name_es) +
+  #facet_geo(~ name_es, grid = argentina_grid2, scales = &quot;free_y&quot;) +  ESTA LINEA ES LA QEU REEMPLAZAMOS PARA geofacet 
+  ylab(&quot;Número Efectivo de Partidos (NEP)&quot;) + 
+  scale_x_continuous(name = &quot;Año&quot;, breaks = c(1983, 1994, 2005))+ 
+  geom_vline(xintercept = 2001, colour=&quot;red&quot;)+ labs(caption=&quot;FUENTE: @Crst_C - http://observablesyhechos.blogspot.mx&quot; ) +
+  theme_bw()</code></pre>
+<p><img src="/post/Geofacetear_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<pre class="r"><code>
+#VERSION GEOFACET  
+ggplot(nep.prov, aes(year, NEPp)) +
+  geom_line(color = &quot;blue&quot;) +
+  #facet_wrap(~name_es) + ESTA ES LA LINEA QUE REEMPLAZAMOS DEL GRAIFCO ANTERIOR
+  facet_geo(~ name_es, grid = argentina_grid2, scales = &quot;free_y&quot;) +  
+  ylab(&quot;Número Efectivo de Partidos (NEP)&quot;) + 
+  scale_x_continuous(name = &quot;Año&quot;, breaks = c(1983, 1994, 2005))+ 
+  geom_vline(xintercept = 2001, colour=&quot;red&quot;)+ labs(caption=&quot;FUENTE: @Crst_C - http://observablesyhechos.blogspot.mx&quot; ) +
+  theme_bw()</code></pre>
+<p><img src="/post/Geofacetear_files/figure-html/unnamed-chunk-2-2.png" width="672" /></p>
