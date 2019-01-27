@@ -144,7 +144,7 @@ Habiendo cargado nuestro _mapa_, solo debemos agregar una capa al _chunk_ de `gg
 ggplot(nep.prov, aes(year, NEPp)) +
   geom_line(color = "blue") +
   #facet_wrap(~name_es) + ESTA ES LA LINEA QUE REEMPLAZAMOS DEL GRAIFCO ANTERIOR
-  facet_geo(~ name_es, grid = argentina_grid2, scales = "free_y") +  # ESTA ES LA LINA PARA ORDENAR LA GRILLA COMO SI FUERA UN MAPA
+  facet_geo(~ name_es, grid = argentina_grid2) +  # ESTA ES LA LINA PARA ORDENAR LA GRILLA COMO SI FUERA UN MAPA
   ylab("Número Efectivo de Partidos (NEP)") + 
   scale_x_continuous(name = "Año", 
                      breaks = c(1983, 1994, 2005), 
