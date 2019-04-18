@@ -25,6 +25,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [[menu.main]]
     name = "Research"
     url = "https://www.researchgate.net/profile/Juan_Ruiz_Nicolini"
+[[menu.main]]
+    name = "Blog"
+    url = "https://tuqmano.github.io/"    
 
 [params]
     description = "Una página sobre R creada desde idem (con HUGO)."
