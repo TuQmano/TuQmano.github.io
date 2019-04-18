@@ -2,21 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TuQmanoR</title>
-    <link>https://TuQmano.github.io/</link>
+    <link>/</link>
     <description>Recent content on TuQmanoR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 21 Jan 2018 17:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://TuQmano.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>diag`R`amas</title>
+      <link>/2019/04/18/diagramas/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/04/18/diagramas/</guid>
+      <description>Ayer participé en el segundo #MiércolesDeDatos, que replica el desafío semanal #TidyTuesday de su hermano anglófono. Esta es una de las iniciativa de @R4DS_es, quienes colaboran para hacer accesible la biblia de la comunidad datera de R para la comunidad hispanoparlante. El proyecto de ayer consitía en hacer un análisis de datos y visualización con información de los libros de Game of Thrones. Esto fue lo que compartí
+Aproveché los datos de este #MiércolesDeDatos para probar una de las features que incluye ggforce (el acelerador de ggplot creado por Thomas Lin Pedersen).</description>
+    </item>
+    
+    <item>
       <title>GeofaceteAR</title>
-      <link>https://TuQmano.github.io/2018/01/21/geofacetear/</link>
+      <link>/2018/01/21/geofacetear/</link>
       <pubDate>Sun, 21 Jan 2018 17:13:14 -0500</pubDate>
       
-      <guid>https://TuQmano.github.io/2018/01/21/geofacetear/</guid>
+      <guid>/2018/01/21/geofacetear/</guid>
       <description>En este posteo quiero mostrar brevemente el proyecto geofacet_AR, presentado en la primera edición de LatinR, tal como adelante en el primer post. El mismo es una \(extensión^2\) (del proyecto de Ryan Hafen y, en otro nivel, de las grillas o facet de ggplot2).
 Me permito hacer una citar/traducir el concepto (lo más básico posible) de la nota introductoria del propio Hafen:
  “El paquete geofacet amplía ggplot2 de una manera que facilita la creación de visualizaciones geográficamente facetadas en R.</description>
@@ -24,10 +34,10 @@ Me permito hacer una citar/traducir el concepto (lo más básico posible) de la 
     
     <item>
       <title>Bienvenidos a TuQmanoR</title>
-      <link>https://TuQmano.github.io/2018/01/17/bienvenidos-a-tuqmanor/</link>
+      <link>/2018/01/17/bienvenidos-a-tuqmanor/</link>
       <pubDate>Wed, 17 Jan 2018 21:13:14 -0500</pubDate>
       
-      <guid>https://TuQmano.github.io/2018/01/17/bienvenidos-a-tuqmanor/</guid>
+      <guid>/2018/01/17/bienvenidos-a-tuqmanor/</guid>
       <description>Este nuevo espacio TuQmano en la nube está pensado para compartir parte del aprendizaje y trabajo con datos. La idea principal es publicar análisis y visualizaciones desarrolados en R.
 Como primer ejemplo vale este mismo sitio. TuQmanoR está creado a partir de la librería blogdown, que combina diversos lenguages (md, RMd, git y HUGO entre otros) para crear sitios estáticos. Todo desde el mismo entorno de RStudio.
 Una de las mayores ventajas de trabajar con R (además de la gratuidad) es la gran comunidad de usuarios.</description>
@@ -35,10 +45,10 @@ Una de las mayores ventajas de trabajar con R (además de la gratuidad) es la gr
     
     <item>
       <title>About</title>
-      <link>https://TuQmano.github.io/about/</link>
+      <link>/about/</link>
       <pubDate>Fri, 05 Jan 2018 21:48:51 -0700</pubDate>
       
-      <guid>https://TuQmano.github.io/about/</guid>
+      <guid>/about/</guid>
       <description>Soy el @TuQmano, también conocido como Juan Pablo Ruiz Nicolini. Soy politólogo^2 de la Universidad Torcuato Di Tella. Trabajo con datos y visualizaciones. Me gustan las elecciones. Data Scientistis WIP.</description>
     </item>
     
