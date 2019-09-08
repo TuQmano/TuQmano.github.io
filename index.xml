@@ -6,10 +6,19 @@
     <description>Recent content on TuQmanoR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LatinR 2019... allá vamos.</title>
+      <link>/2019/09/08/latinr-2019/</link>
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/09/08/latinr-2019/</guid>
+      <description>Los próximos 25, 26 y 27 de septiembre se desarrollará en Santiago de Chile la segunda edición de LatinR: Conferencia Latinoamericana sobre el uso de R en I+D. Tuve la suerte de participar en la primera edición, que se llevó a cabo en Buenos Aires hace un año, donde pude mostrar un pequeño proyecto -aún en desarrollo- que consiste en el desarrollo de mapas como si fueran grillas (geofacet) aplicados a divisiones políticas de Argentina (a nivel país y provincial) 1</description>
+    </item>
     
     <item>
       <title>diag`R`amas</title>
