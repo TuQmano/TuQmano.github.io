@@ -3,7 +3,7 @@ title: "About"
 date: "2018-01-05T21:48:51-07:00"
 ---
 
-Soy el [@TuQmano](https://www.twitter.com/tuqmano), también conocido como Juan Pablo Ruiz Nicolini. Soy [politólogo$^2$](https://utdt.academia.edu/JuanPabloRuizNicolini) de la Universidad Torcuato Di Tella. Trabajo con datos y visualizaciones. Me gustan las elecciones. _Data Scientistis (WIP)_ en [*menta Comunicación*](http://mentacomunicacion.com.ar/bigdata/). 
+Soy el [@TuQmano](https://www.twitter.com/tuqmano), también conocido como Juan Pablo Ruiz Nicolini. Soy [politólogo^2](https://utdt.academia.edu/JuanPabloRuizNicolini) de la Universidad Torcuato Di Tella. Trabajo con datos y visualizaciones. Me gustan las elecciones. _Data Scientistis (WIP)_ en [*menta Comunicación*](http://mentacomunicacion.com.ar/bigdata/). 
 
 Como politólogo mi trabajo se concentra en estudios electorales, partidos políticos y reforma política. En particular he trabajado en la evaluación del impacto político del cambio en la tecnología con la que se emiten los votos. 
 
