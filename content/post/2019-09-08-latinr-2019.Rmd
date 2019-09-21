@@ -11,7 +11,7 @@ Los próximos 25, 26 y 27 de septiembre se desarrollará en Santiago de Chile la
 
 [^1]: Esto decíamos en un post previo: [ _geofaceteAR_ ](https://tuqmano.github.io/2019/01/21/geofacetear/)
 
-Gracias al apoyo del comité evaluador tendré la oportunidad de participar nuevamente en esta segunda edición. En esta ocasión mostraré un proyecto en el que trabajamos con el colega y tocayo JP Pilorget para _menta Comunicación_. Un _dashboard_ de `Shiny` que permite la visualización rápida y centralizada de variables electorales, de interés para el análisis político y el desarrollo de campañas electorales (en desarrollo). 
+Gracias al apoyo del comité evaluador tendré la oportunidad de participar nuevamente en esta segunda edición. En esta ocasión mostraré un proyecto en el que trabajamos con el colega y tocayo JP Pilorget para <b><span style="color:#179E8D">_menta Comunicación_</span></b> . Un _dashboard_ de `Shiny` que permite la visualización rápida y centralizada de variables electorales, de interés para el análisis político y el desarrollo de campañas electorales (en desarrollo). 
 
 ![](https://pbs.twimg.com/media/D_sCYBWW4AAgVBz?format=jpg)
 
