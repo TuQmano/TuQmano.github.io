@@ -22,7 +22,7 @@ data <- read_csv("https://raw.githubusercontent.com/TuQmano/data_TuQmanoR/master
 
 ```
 
-Terminó nomás la segunda edición de [#LatinR](https://latin-r.com/). Tres días a pleno con  _workshops_, exposiciones plenarias, presentaciones y posters. Diversidad de disciplinas, participantes de casi toda nuestramerica e invitados super grosos. Donde no solo aprendì cuestiones técnicas y nuevas herramientas, sino también el ejericio constante de reforzar el trabajo colaborativo dentro de una comunidad diversa y plural.
+Terminó nomás la segunda edición de [#LatinR](https://latin-r.com/). Tres días a pleno con  _workshops_, exposiciones plenarias, presentaciones y posters. Diversidad de disciplinas, participantes de casi toda nuestramerica e invitados super grosos. Donde no solo aprendí cuestiones técnicas y nuevas herramientas, sino también el ejericio constante de reforzar el trabajo colaborativo dentro de una comunidad diversa y plural.
 
 ![](https://pbs.twimg.com/media/EFmQee1X0AATUnv?format=jpg&name=large)
 
@@ -131,8 +131,7 @@ ggraph(grafo2,  layout = 'linear', circular = TRUE) +
   theme_graph() +
   theme(legend.position = "none", 
         panel.background = element_rect(fill = "#00A18E")) +
-  labs(title = "La conversación de #LatinR2019 en Twitter", 
-       caption = "(Tamaño y color de los nodos está dado por la cantidad de menciones a los usuarios en los ~ 600 tweets)")
+  labs(title = "La conversación de #LatinR2019 en Twitter")
 
 ```
 
