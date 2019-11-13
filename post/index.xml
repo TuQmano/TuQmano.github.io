@@ -6,10 +6,20 @@
     <description>Recent content in Posts on TuQmanoR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>InteRacciones en twitteR</title>
+      <link>/2019/11/11/interacciones-en-twitter/</link>
+      <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/11/11/interacciones-en-twitter/</guid>
+      <description>Análisis realizado junto a Camila Higa 1
+Twitter es la plataforma preferida para el análisis de datos políticos en redes. Hay por lo menos dos razones que lo explican: (a) es allí donde la mayoría de los dirigentes políticos se expresan (y, por ende, donde el público que consume información política interactúa); y (b) es la red que disponibiliza libremente grandes volumenes de información.</description>
+    </item>
     
     <item>
       <title>LatinR2019 ha muerto... que viva LatinR2020</title>
@@ -18,7 +28,7 @@
       
       <guid>/2019/09/30/latinr2019-ha-muerto-que-viva-latinr2020/</guid>
       <description>Terminó nomás la segunda edición de #LatinR. Tres días a pleno con workshops, exposiciones plenarias, presentaciones y posters. Diversidad de disciplinas, participantes de casi toda nuestramerica e invitados super grosos. Donde no solo aprendí cuestiones técnicas y nuevas herramientas, sino también el ejericio constante de reforzar el trabajo colaborativo dentro de una comunidad diversa y plural.
- Yo en particular tuve la gran oportunidad además de (a) participar de un genial taller sobre el desarrollo de paquetes, con el messi de este lío (H.</description>
+Yo en particular tuve la gran oportunidad además de (a) participar de un genial taller sobre el desarrollo de paquetes, con el messi de este lío (H.</description>
     </item>
     
     <item>
@@ -48,7 +58,7 @@ Aproveché los datos de este #MiércolesDeDatos para probar una de las features 
       <guid>/2019/01/21/geofacetear/</guid>
       <description>En este posteo quiero mostrar brevemente el proyecto geofacet_AR, presentado en la primera edición de LatinR, tal como adelante en el primer post. El mismo es una \(extensión^2\) (del proyecto de Ryan Hafen y, en otro nivel, de las grillas o facet de ggplot2).
 Me permito hacer una citar/traducir el concepto (lo más básico posible) de la nota introductoria del propio Hafen:
- “El paquete geofacet amplía ggplot2 de una manera que facilita la creación de visualizaciones geográficamente facetadas en R.</description>
+“El paquete geofacet amplía ggplot2 de una manera que facilita la creación de visualizaciones geográficamente facetadas en R.</description>
     </item>
     
     <item>
