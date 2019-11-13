@@ -18,7 +18,7 @@ output: html_notebook
 
 library(tidyverse)
 
-data <- read_csv("https://raw.githubusercontent.com/TuQmano/data_TuQmanoR/master/data.csv")
+data <- read_csv("https://raw.githubusercontent.com/TuQmano/data_TuQmanoR/master/latinr_conf_tweets.csv")
 
 ```
 
