@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on TuQmanoR</title>
@@ -6,10 +6,21 @@
     <description>Recent content in Posts on TuQmanoR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Congreso 2.0: politicos argentinos en Twitter</title>
+      <link>/2020/03/12/congreso-2-0-politicos-argentinos-en-twitter/</link>
+      <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/12/congreso-2-0-politicos-argentinos-en-twitter/</guid>
+      <description>(Juan Pablo Ruiz Nicolini, Camila Higa, Franco Galeano y Carolina Rossi1)
+La conformación de un nuevo cuerpo legislativo para los próximos dos años en Argentina nos motivó a hacer un análisis de la estructura, funcionamiento e interacciones de las cuentas de Twitter de los legisladores nacionales que conformarán el Congreso de la Nación durante el periodo 2019 - 2021.
+Tal como hiciéramos respecto a las cuentas de legisladores pertenecientes al Senado de la Nación (disponible acá), en los siguientes apartados nos proponemos hacer una radiografía de la Cámara de Diputados.</description>
+    </item>
     
     <item>
       <title>InteRacciones en twitteR</title>
@@ -28,7 +39,7 @@ Twitter es la plataforma preferida para el análisis de datos políticos en rede
       
       <guid>/2019/09/30/latinr2019-ha-muerto-que-viva-latinr2020/</guid>
       <description>Terminó nomás la segunda edición de #LatinR. Tres días a pleno con workshops, exposiciones plenarias, presentaciones y posters. Diversidad de disciplinas, participantes de casi toda nuestramerica e invitados super grosos. Donde no solo aprendí cuestiones técnicas y nuevas herramientas, sino también el ejericio constante de reforzar el trabajo colaborativo dentro de una comunidad diversa y plural.
-Yo en particular tuve la gran oportunidad además de (a) participar de un genial taller sobre el desarrollo de paquetes, con el messi de este lío (H.</description>
+ Yo en particular tuve la gran oportunidad además de (a) participar de un genial taller sobre el desarrollo de paquetes, con el messi de este lío (H.</description>
     </item>
     
     <item>

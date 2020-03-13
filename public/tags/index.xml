@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on TuQmanoR</title>
@@ -6,7 +6,7 @@
     <description>Recent content in Tags on TuQmanoR</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Jan 2019 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 21 Jan 2019 17:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,14 +14,14 @@
     <item>
       <title>R Markdown</title>
       <link>/tags/r-markdown/</link>
-      <pubDate>Thu, 17 Jan 2019 21:13:14 -0500</pubDate>
+      <pubDate>Mon, 21 Jan 2019 17:13:14 -0500</pubDate>
       
       <guid>/tags/r-markdown/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>R Markdown Ggplot Geo</title>
+      <title>R Markdown, ggplot, geo</title>
       <link>/tags/r-markdown-ggplot-geo/</link>
       <pubDate>Mon, 21 Jan 2019 17:13:14 -0500</pubDate>
       
