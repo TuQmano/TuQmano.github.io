@@ -12,11 +12,21 @@
     
     
     <item>
-      <title>Congreso 2.0: politicos argentinos en Twitter</title>
-      <link>/2020/03/12/congreso-2-0-politicos-argentinos-en-twitter/</link>
-      <pubDate>Thu, 12 Mar 2020 00:00:00 +0000</pubDate>
+      <title>Los discursos de les presidentes</title>
+      <link>/2020/03/11/los-discursos-de-les-presidentes/</link>
+      <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/2020/03/12/congreso-2-0-politicos-argentinos-en-twitter/</guid>
+      <guid>/2020/03/11/los-discursos-de-les-presidentes/</guid>
+      <description>(Análisis del equipo de datos de menta Comunicación1)
+Todos los 1 de marzo, ambas Cámaras del Congreso se reúnen para dar comienzo al año legislativo y cada año el presidente de turno encabeza el acto de Apertura. Los discursos2 suelen girar en torno a los ejes de gobierno, las promesas y los objetivos del año, pero más allá del contenido, cada uno tiene un estilo personal marcado por el presidente.</description>
+    </item>
+    
+    <item>
+      <title>Congreso 2.0: politicos argentinos en Twitter</title>
+      <link>/2019/12/20/congreso-2-0-politicos-argentinos-en-twitter/</link>
+      <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/12/20/congreso-2-0-politicos-argentinos-en-twitter/</guid>
       <description>(Juan Pablo Ruiz Nicolini, Camila Higa, Franco Galeano y Carolina Rossi1)
 La conformación de un nuevo cuerpo legislativo para los próximos dos años en Argentina nos motivó a hacer un análisis de la estructura, funcionamiento e interacciones de las cuentas de Twitter de los legisladores nacionales que conformarán el Congreso de la Nación durante el periodo 2019 - 2021.
 Tal como hiciéramos respecto a las cuentas de legisladores pertenecientes al Senado de la Nación (disponible acá), en los siguientes apartados nos proponemos hacer una radiografía de la Cámara de Diputados.</description>
@@ -39,7 +49,7 @@ Twitter es la plataforma preferida para el análisis de datos políticos en rede
       
       <guid>/2019/09/30/latinr2019-ha-muerto-que-viva-latinr2020/</guid>
       <description>Terminó nomás la segunda edición de #LatinR. Tres días a pleno con workshops, exposiciones plenarias, presentaciones y posters. Diversidad de disciplinas, participantes de casi toda nuestramerica e invitados super grosos. Donde no solo aprendí cuestiones técnicas y nuevas herramientas, sino también el ejericio constante de reforzar el trabajo colaborativo dentro de una comunidad diversa y plural.
- Yo en particular tuve la gran oportunidad además de (a) participar de un genial taller sobre el desarrollo de paquetes, con el messi de este lío (H.</description>
+Yo en particular tuve la gran oportunidad además de (a) participar de un genial taller sobre el desarrollo de paquetes, con el messi de este lío (H.</description>
     </item>
     
     <item>
@@ -69,7 +79,7 @@ Aproveché los datos de este #MiércolesDeDatos para probar una de las features 
       <guid>/2019/01/21/geofacetear/</guid>
       <description>En este posteo quiero mostrar brevemente el proyecto geofacet_AR, presentado en la primera edición de LatinR, tal como adelante en el primer post. El mismo es una \(extensión^2\) (del proyecto de Ryan Hafen y, en otro nivel, de las grillas o facet de ggplot2).
 Me permito hacer una citar/traducir el concepto (lo más básico posible) de la nota introductoria del propio Hafen:
- “El paquete geofacet amplía ggplot2 de una manera que facilita la creación de visualizaciones geográficamente facetadas en R.</description>
+“El paquete geofacet amplía ggplot2 de una manera que facilita la creación de visualizaciones geográficamente facetadas en R.</description>
     </item>
     
     <item>

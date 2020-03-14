@@ -1,7 +1,7 @@
 ---
 title: 'Congreso 2.0: politicos argentinos en Twitter'
 author: ~
-date: '2020-03-12'
+date: '2019-12-20'
 slug: congreso-2-0-politicos-argentinos-en-twitter
 categories: []
 tags: []

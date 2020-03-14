@@ -19,7 +19,7 @@
       <guid>/2019/01/21/geofacetear/</guid>
       <description>En este posteo quiero mostrar brevemente el proyecto geofacet_AR, presentado en la primera edición de LatinR, tal como adelante en el primer post. El mismo es una \(extensión^2\) (del proyecto de Ryan Hafen y, en otro nivel, de las grillas o facet de ggplot2).
 Me permito hacer una citar/traducir el concepto (lo más básico posible) de la nota introductoria del propio Hafen:
- “El paquete geofacet amplía ggplot2 de una manera que facilita la creación de visualizaciones geográficamente facetadas en R.</description>
+“El paquete geofacet amplía ggplot2 de una manera que facilita la creación de visualizaciones geográficamente facetadas en R.</description>
     </item>
     
   </channel>
