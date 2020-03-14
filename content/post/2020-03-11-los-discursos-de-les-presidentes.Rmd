@@ -13,9 +13,9 @@ library(knitr)
                           
 ```
 
-(***Análisis del equipo de datos de <b style="color:#179E8D">menta Comunicación</b>***[^1]) 
+(***[Juan Pablo Ruiz Nicolini](https://twitter.com/tuqmano), [Iván Lewin](https://github.com/ivanlewin) y [Camila Higa](https://twitter.com/chig4_)***[^1]) 
 
-[^1]: [Juan Pablo Ruiz Nicolini](https://twitter.com/tuqmano), [Iván Lewin](https://github.com/ivanlewin) y [Camila Higa](https://twitter.com/chig4_).
+[^1]: Publicado originalmente en []()***[<b style="color:#179E8D">https://mentacomunicacion.github.io/</b>](https://mentacomunicacion.github.io/2019/12/20/diputados2-0/)***
 [^2]: Los discursos fueron compilados por [Antonio Milanese](https://twitter.com/amilanese) a partir de lo publicado en la [HCDN](https://www.hcdn.gob.ar/secparl/dgral_info_parlamentaria/dip/documentos/mensajes_presidenciales.html).
 [^3]: RA = Raúl Alfonsín, CSM = Carlos Saúl Menem, FDR = Fernando de la Rúa, ED = Eduardo Duhalde, NK = Néstor Kirchner, CFK= Cristina Fernández de Kirchner, MM = Mauricio Macri, AF = Alberto Fernández
 [^5]: https://datascience.berkeley.edu/blog/trump-state-of-the-union-analysis/
