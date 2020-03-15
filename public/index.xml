@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>dibujaR legislatuRas</title>
+      <link>/2020/03/15/dibujar-legislaturas/</link>
+      <pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/15/dibujar-legislaturas/</guid>
+      <description>Aprovechamos el distanciamiento social para comaprtir algunas de las cosas que venían quedando pendiente de actualizar.
+Ya se pueden leer en TuQmanoR dos de los ejercicios con datos y visualizaciones que hicimos con les compañeres de menta Comunicación:
+Uno primero que consistió en analizar la información asociada a cada una de las cuentas de legisladores (Senadores y Diputades) argentinos que conformarán el Congreso Nacional en el periódo 2019-2021, cómo son utilizadas las cuentas, cómo interactúa el público con sus publicaciones y cómo podemos distinguir a las cuentas en distintos grupos o clusters de afinidad.</description>
+    </item>
+    
+    <item>
       <title>Los discursos de les presidentes</title>
       <link>/2020/03/11/los-discursos-de-les-presidentes/</link>
       <pubDate>Wed, 11 Mar 2020 00:00:00 +0000</pubDate>
@@ -79,7 +90,7 @@ Aproveché los datos de este #MiércolesDeDatos para probar una de las features 
       <guid>/2019/01/21/geofacetear/</guid>
       <description>En este posteo quiero mostrar brevemente el proyecto geofacet_AR, presentado en la primera edición de LatinR, tal como adelante en el primer post. El mismo es una \(extensión^2\) (del proyecto de Ryan Hafen y, en otro nivel, de las grillas o facet de ggplot2).
 Me permito hacer una citar/traducir el concepto (lo más básico posible) de la nota introductoria del propio Hafen:
-“El paquete geofacet amplía ggplot2 de una manera que facilita la creación de visualizaciones geográficamente facetadas en R.</description>
+ “El paquete geofacet amplía ggplot2 de una manera que facilita la creación de visualizaciones geográficamente facetadas en R.</description>
     </item>
     
     <item>
