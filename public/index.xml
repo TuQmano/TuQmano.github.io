@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Datos y Covid19</title>
+      <link>/2020/03/29/datos-y-covid19/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/29/datos-y-covid19/</guid>
+      <description>Hace unos poco días Andrés Vázquez nos invitó a un conjunto de personas (especialistas en datos abiertos, cientistas de datos, economistas, informáticos y desarrolladores de software) a responder \(3\) preguntas que tienen que ver con los desafíos de la apertura de datos en el contexto de la crísis de la pandemia del Covid19.
+Cadena de Datos / Episodio 34: En este contexto de crisis y preocupación por la pandemia donde todos queremos saber que paso ahora, que tan grave es y que va a pasar en las próximas semanas me surgen algunas dudas acerca de las políticas de apertura y uso de los datos relacionados a este tema.</description>
+    </item>
+    
+    <item>
       <title>dibujaR legislatuRas</title>
       <link>/2020/03/15/dibujar-legislaturas/</link>
       <pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate>
@@ -90,7 +100,7 @@ Aproveché los datos de este #MiércolesDeDatos para probar una de las features 
       <guid>/2019/01/21/geofacetear/</guid>
       <description>En este posteo quiero mostrar brevemente el proyecto geofacet_AR, presentado en la primera edición de LatinR, tal como adelante en el primer post. El mismo es una \(extensión^2\) (del proyecto de Ryan Hafen y, en otro nivel, de las grillas o facet de ggplot2).
 Me permito hacer una citar/traducir el concepto (lo más básico posible) de la nota introductoria del propio Hafen:
- “El paquete geofacet amplía ggplot2 de una manera que facilita la creación de visualizaciones geográficamente facetadas en R.</description>
+“El paquete geofacet amplía ggplot2 de una manera que facilita la creación de visualizaciones geográficamente facetadas en R.</description>
     </item>
     
     <item>
