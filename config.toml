@@ -27,8 +27,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     name = "Blog"
     url = "/post"    
 [[menu.main]]
-    name = "Atlas Electoral Tucumán"
-    url = "http://atlaselectoral.tucuman.gov.ar/"     
+    name = "polAr"
+    url = "https://electorarg.github.io/polAr/"     
 
 [params]
     description = "Una página sobre R creada desde idem (con HUGO)."
