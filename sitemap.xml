@@ -3,12 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/2020/03/29/datos-y-covid19/</loc>
-    <lastmod>2020-03-29T00:00:00+00:00</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/cran/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/geofacetar/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/polar/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/polar/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/05/22/empaquetar/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2020/03/29/datos-y-covid19/</loc>
     <lastmod>2020-03-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -48,17 +93,7 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2019-01-21T17:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/2019/01/21/geofacetear/</loc>
-    <lastmod>2019-01-21T17:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/r/</loc>
     <lastmod>2019-01-21T17:13:14-05:00</lastmod>
   </url>
   
@@ -74,11 +109,6 @@
   
   <url>
     <loc>/categories/r-dataviz/</loc>
-    <lastmod>2019-01-21T17:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2019-01-21T17:13:14-05:00</lastmod>
   </url>
   
