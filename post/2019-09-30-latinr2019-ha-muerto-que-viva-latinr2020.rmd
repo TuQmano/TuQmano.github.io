@@ -18,7 +18,7 @@ output: html_notebook
 
 library(tidyverse)
 
-data <- read_csv("https://raw.githubusercontent.com/TuQmano/data_TuQmanoR/master/latinr_conf_tweets.csv")
+data <- read_csv("https://raw.githubusercontent.com/TuQmano/data_TuQmanoR/master/tweets_latinR.csv")
 
 ```
 
@@ -33,7 +33,7 @@ Acá se puede acceder al `shiny` app de [Inteligencia Electoral](http://intelige
 ---
 ## `LatinR` en la red del pajarito 
 
-Twitter es un gran lugar para estar conectado con las novedades de [#rstats](https://twitter.com/search?q=rstatsES). Y `LatinR` nos dió la posibilidad de poder ponerle cara a un montón de `@rrobas` con los que uno interactua cotidianamente en esa conexión. Algo de todo esto se pudo vivir a través de twitter detrás del _hashtag_ `#LatinR2019`. Los gráficos de abajo son una muestra de eso.    
+Twitter es un gran lugar para estar conectado con las novedades de [#rstats](https://twitter.com/search?q=rstatsES). Y `LatinR` nos dió la posibilidad de poder ponerle cara a un montón de `@rrobas` con los que uno interactúa cotidianamente en esa conexión. Algo de todo esto se pudo vivir a través de twitter detrás del _hashtag_ `#LatinR2019`. Los gráficos de abajo son una muestra de eso.    
 
 
 ```{r contributors, echo=FALSE, message=FALSE, warning=FALSE}
