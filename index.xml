@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>NOS MUDAMOS</title>
+      <link>/2020/05/24/nos-mudamos/</link>
+      <pubDate>Sun, 24 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/05/24/nos-mudamos/</guid>
+      <description>Por razones de simplicidad y minimización de conflictos con git la administración a decidido su mudanza permanente a un nuevo hogar.
+Pueden encontrarnos en nuestra nueva casa&amp;gt;: tuqmanor.netlify.app.</description>
+    </item>
+    
+    <item>
       <title>polaR on CRAN</title>
       <link>/2020/05/22/empaquetar/</link>
       <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>

@@ -117,25 +117,7 @@ argentina_grid2 &lt;-  data.frame(
 
 grid_preview(argentina_grid2)</code></pre>
 <p><img src="/post/Geofacetear_files/figure-html/geogridARG-1.png" width="576" /></p>
-<hr />
-</div>
-<div id="geofacet-nep" class="section level3">
-<h3><code>geofacet</code> + NEP</h3>
-<p>Habiendo cargado nuestro <em>mapa</em>, solo debemos agregar una capa al <em>chunk</em> de <code>ggplot2</code>:</p>
-<pre class="r"><code>
-#VERSION GEOFACET  
-ggplot(nep.prov, aes(year, NEPp)) +
-  geom_line(color = &quot;blue&quot;) +
-  #facet_wrap(~name_es) + ESTA ES LA LINEA QUE REEMPLAZAMOS DEL GRAIFCO ANTERIOR
-  facet_geo(~ name_es, grid = argentina_grid2) +  # ESTA ES LA LINA PARA ORDENAR LA GRILLA COMO SI FUERA UN MAPA
-  ylab(&quot;Número Efectivo de Partidos (NEP)&quot;) + 
-  scale_x_continuous(name = &quot;Año&quot;, 
-                     breaks = c(1983, 1994, 2005), 
-                     labels = c(&quot;`83&quot;,&quot;`94&quot;,&quot;`05&quot;))+ 
-  geom_vline(xintercept = 2001, colour=&quot;red&quot;)+ labs(caption=&quot;FUENTE: @Crst_C - http://observablesyhechos.blogspot.mx&quot; ) +
-  theme_bw()</code></pre>
-<p><img src="/post/Geofacetear_files/figure-html/unnamed-chunk-2-1.png" width="576" /></p>
-<p>Esa es la idea básica de qué es y para qué sirve <code>geofacet</code>. En un próximo post intentaré con otros ejemplos mostrar un poco más el <strong>detrás de escena</strong> del código.</p>
+<p>(<em><strong>Nota</strong>: A partir del 24 de mayo de 2020 pueden encontrarnos en <a href="https://tuqmanor.netlify.app/">https://tuqmanor.netlify.app/</a></em>)</p>
 </div>
 <div class="footnotes">
 <hr />

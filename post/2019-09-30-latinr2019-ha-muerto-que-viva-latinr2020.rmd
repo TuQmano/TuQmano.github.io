@@ -139,3 +139,9 @@ ggraph(grafo2,  layout = 'linear', circular = TRUE) +
 
 Ya pasaron Buenos Aires (2018) y Santiago (2019). Llega el turno de `LatinR2020` en Montevideo. 
 
+
+
+---
+
+(***Nota**: A partir del 24 de mayo de 2020 pueden encontrarnos en [https://tuqmanor.netlify.app/](https://tuqmanor.netlify.app/)*)
+
