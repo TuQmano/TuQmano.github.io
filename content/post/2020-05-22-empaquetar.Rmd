@@ -162,7 +162,7 @@ blogdown::shortcode('tweet', '1263618240938496000')
 
 Lo anterior es posible gracias a otro paquete, disponible para descarga desde un repositorio de _github_.  `geofaceteAr` es una extensión local del paquete `geofacet` de Ryan Haffen. El empaquetado fue el resultado de ordenar la aplicación para Argentina de esta técnica de acomodar las grillas de `ggplot2` como si fueran mapas, originalmente presentadas en `LatinR` 2018. 
 
-Éste arga `geofacet` y agrega unas pocas funciones de utilidad para la _geografía_ argentina. La priemra de ellas es `show_arg_codes()`que muestra un diccionario de grillas con el _id_ correspondiente para descarga y equivalencias de esis _id_ de  diferentes distritos. 
+Éste carga el paquete `geofacet` y agrega funciones de utilidad para la _geografía_ argentina. La priemra de ellas es `show_arg_codes()`que muestra un diccionario de grillas con el _id_ correspondiente para descarga y equivalencias de los _id_ correspodientes a los  diferentes distritos. 
 
 ```{r show_codes, message=FALSE, warning=FALSE}
 library(geofaceteAR)
@@ -172,7 +172,7 @@ show_arg_codes()
 ```
 
 
-Usamos la función `get_grid()` para llamar a algunas de las grillas disponibles en la tabla anterior. Y `grid_preview()` si queremos ver el diseño de la grilla.
+Usamos la función `get_grid()` para llamar una grilla disponible en la tabla anterior. Y `grid_preview()` si queremos ver el diseño de la grilla.
 
 
 ```{r get, message=FALSE, warning=FALSE}
@@ -187,7 +187,7 @@ get_grid("TUCUMAN") %>%
 
 ```
 
-Luego, podemos hacer uso nuevamente de la información en nuestro diccionario de códigos _geográficos_ para recodificar los distritos. El código por _default_ - el que figura dentro de cada cajita del _mapa_- es el correspondiente a los escrutinios provisorios (que utilizamos en `polAr`), pero podemos contar con otros _id_. Por ejemplo, los del _INDEC_: 
+Luego, podemos hacer uso nuevamente de la información en nuestro diccionario de identificadores _geográficos_ para recodificar los distritos. El código por _default_ - el que figura dentro de cada cajita del _mapa_- es el correspondiente a los escrutinios provisorios (que utilizamos en `polAr`), pero podemos disponer de otros. Por ejemplo, los del _INDEC_: 
 
 
 ```{r recode, message=FALSE, warning=FALSE}
