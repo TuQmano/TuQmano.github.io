@@ -1,0 +1,19 @@
+---
+title: NOS MUDAMOS
+author: ~
+date: '2020-05-24'
+slug: nos-mudamos
+categories: []
+tags: []
+---
+
+![](http://www.canal-comunicacio.cat/We_have_moved1.png)
+
+Por razones de simplicidad y minimización de conflictos con _git_ la administración a decidido su mudanza permanente a un nuevo hogar. 
+
+
+![](https://media1.tenor.com/images/3ef34f6cc6f98e888f8fd69245ee3e44/tenor.gif)
+
+Pueden encontrarnos en nuestra nueva casa>: [tuqmanor.netlify.app](https://tuqmanor.netlify.app/). 
+
+
